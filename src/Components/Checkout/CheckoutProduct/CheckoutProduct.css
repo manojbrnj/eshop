@@ -1,8 +1,8 @@
-.product {
+.checkoutproduct {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: 10px;
   padding: 10px;
   /* max-height: 400px;
@@ -12,17 +12,16 @@
   background-color: white;
   border: 2px solid rgba(128, 128, 128, 0.094);
 }
-.product__rating {
+.checkoutproduct__rating {
   display: flex;
 }
-.product__image {
+.checkoutproduct__image {
   max-height: 200px;
   min-height: 200px;
-  width: 100%;
   object-fit: contain;
 }
 
-.product__button {
+.checkoutproduct__button {
   width: 200px;
   padding: 8px 10px;
   background-color: rgb(18, 81, 16);
@@ -37,7 +36,7 @@
   font-weight: 800;
 }
 
-.product__button:active {
+.checkoutproduct__button:active {
   width: 200px;
   padding: 8px 10px;
   background-color: rgb(18, 81, 16);
@@ -52,7 +51,7 @@
   font-weight: 800;
 }
 
-.product__button:hover {
+.checkoutproduct__button:hover {
   width: 200px;
   padding: 8px 10px;
   background-color: rgb(18, 81, 16);
@@ -77,11 +76,16 @@
 
   color: transparent;
 }
-.product__info {
-  height: 100px;
-  margin-bottom: 15px;
-}
+.checkoutproduct__info {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
 
+  gap: 10px;
+}
+.checkoutproduct__info > p {
+  font-size: 24px;
+}
 @keyframes rotateAnimation {
   0% {
     transform: rotate(0deg); /* Start with no rotation (0 degrees) */
@@ -89,14 +93,4 @@
   100% {
     transform: rotate(360deg); /* Rotate 360 degrees (full circle) */
   }
-}
-.checkout__ads {
-  max-height: 200px;
-  width: 100%;
-}
-
-.checkout__left {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 800px;
 }

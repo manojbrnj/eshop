@@ -16,7 +16,7 @@ function Product({title, price, star, image}) {
       </div>
       <img src={image} className='product__image' alt='' />
       <button className='product__button' type='button'>
-        Add To Basket
+        <span className='textspan'>Add To Basket</span>
       </button>
     </div>
   );

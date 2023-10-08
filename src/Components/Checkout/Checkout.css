@@ -1,0 +1,14 @@
+.checkout {
+  display: flex;
+  flex-basis: 100px;
+  margin-top: 60px;
+}
+.checkout__ads {
+  height: 100px;
+}
+.checkout__left {
+  flex: 5;
+}
+.checkout__right {
+  flex: 1;
+}
